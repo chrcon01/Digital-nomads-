@@ -1,0 +1,99 @@
+$primary-color: #01204E;
+$secondary-color: #F6C30D;
+$hover-color: #C8E0D9;
+$font-color: #fff;
+$font-primary: 'Bebas Neue', sans-serif;
+$font-secondary: 'Holtwood One SC', sans-serif;
+$shadow: rgba(0, 0, 0, 0.5);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header_con {
+    position: relative;
+    width: 100%;
+    padding: 0.625rem 1.25rem;
+    background-color: $primary-color;
+    color: $font-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .logo {
+      margin-right: auto; 
+      img {
+        height: 5rem; 
+      }
+    }
+
+    .header_txt {
+        font-family: $font-primary;
+        font-size: 4rem;
+        letter-spacing: 0.05rem;
+        color: $secondary-color;
+        padding: 0.625rem 0;
+        margin: 0 auto;
+      }
+  
+    .btn {
+      display: flex;
+      align-items: center;
+      margin-left: 1.25rem; 
+  
+      .nav_text {
+        color: $font-color;
+        font-family: $font-primary;
+        font-size: 1.5rem;
+        letter-spacing: 0.05rem;
+        text-decoration: none;
+        padding: 0.625rem 1rem; 
+        transition: background-color 0.3s ease;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  
+        &:hover {
+          color: $hover-color; 
+        }
+      }
+    }
+  }
+  
+
+.page-con {
+    width: 100%;
+    height: calc(100vh - 60px); 
+    background-image: url('colorful-world-map-with-country-names-free-vector 1_edit_2 1.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $font-color;
+    text-shadow: 2px 2px 4px $shadow;
+
+    h1 {
+        font-size: 7rem;  
+        letter-spacing: 0.05rem;          
+        font-family: $font-secondary;
+        text-align: left;            
+      }
+      
+      h2 {
+        font-size: 3rem;   
+        letter-spacing: 0.05rem;       
+        margin-top: 0.5rem;        
+        font-family: $font-secondary;
+        text-align: left;  
+    } 
+
+    .plane {
+        position: absolute;
+        right: 10%;
+        bottom: 10%;
+        width: 50px;
+        transform: rotate(20deg);
+    }
+}
